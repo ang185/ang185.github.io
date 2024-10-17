@@ -41,15 +41,16 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Button
-        onClick={handleLanguage}
-        aria-label={`Change language to ${
-          language === "ES" ? "English" : "Spanish"
-        }`}
-      >
-        <ReactCountryFlag countryCode={getFlagEmoji()} svg />
-      </Button>
       <Container>
+        <Button
+          style={{ marginRight: "12px" }}
+          onClick={handleLanguage}
+          aria-label={`Change language to ${
+            language === "ES" ? "English" : "Spanish"
+          }`}
+        >
+          <ReactCountryFlag countryCode={getFlagEmoji()} svg />
+        </Button>
         <Navbar.Brand href="/" className="d-flex">
           {NAVBAR_TEXT.NAME}
         </Navbar.Brand>
