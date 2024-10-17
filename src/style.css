@@ -284,24 +284,37 @@ button:focus {
   color: #3321d5;
 }
 
-.Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #3321d5 !important;
-  font-weight: 600 !important;
+.typewriter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
+
+.Typewriter__wrapper {
+  font-size: 2.2em;
+  color: #3321d5;
+  font-weight: 600;
+  display: inline-block; /* Cambiado de flex a inline-block */
+}
+
 .Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #3321d5 !important;
+  font-size: 2.4em;
+  color: #3321d5;
+  display: inline-block; /* Asegura que el cursor esté en línea */
+  vertical-align: bottom; /* Alinea el cursor con la parte inferior del texto */
+  margin-left: 2px; /* Añade un pequeño espacio entre el texto y el cursor */
 }
 
 @media (max-width: 767px) {
   .Typewriter__wrapper {
     font-size: 1.4em !important;
     font-weight: 500 !important;
-    position: absolute !important;
   }
   .Typewriter__cursor {
-    display: none !important;
+    font-size: 1.6em !important;
+    font-weight: 500 !important;
   }
 }
 

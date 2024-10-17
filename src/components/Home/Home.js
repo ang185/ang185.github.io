@@ -25,12 +25,10 @@ function Home() {
             {t.iAm}
             <strong className="main-name">{NAVBAR_TEXT.NAME}</strong>
           </h1>
-
-          <div style={{ padding: 20, textAlign: "center" }}>
-            <Type />
-          </div>
         </Container>
+        <Type />
       </Container>
+
       <Home2 />
     </section>
   );
