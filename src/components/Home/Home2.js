@@ -53,7 +53,6 @@ function Home2() {
         <Row>
           <Col md={12} className="home-about-social">
             <h1>{t.findMeOn}</h1>
-            <p>{t.connect}</p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
