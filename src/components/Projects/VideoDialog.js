@@ -24,6 +24,18 @@ export default function VideoDialog({ video, openDialog, setOpenDialog }) {
     justifyContent: "center",
   };
 
+  const getVideoElement = () => {
+    const fileId = video.match(/[-\w]{25,}/);
+    return (
+      <iframe
+        src={`https://drive.google.com/file/d/${fileId}/preview`}
+        width="100%"
+        height="480"
+        allow="autoplay"
+      ></iframe>
+    );
+  };
+
   return (
     <Modal
       show={openDialog}
@@ -34,12 +46,7 @@ export default function VideoDialog({ video, openDialog, setOpenDialog }) {
       <Modal.Header closeButton style={{ background: "white" }}>
         <Modal.Title>Video</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
-        <video width="100%" controls>
-          <source src={video} type="video/mp4" />
-          Not Supported
-        </video>
-      </Modal.Body>
+      <Modal.Body>{getVideoElement()}</Modal.Body>
     </Modal>
   );
 }

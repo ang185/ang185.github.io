@@ -40,7 +40,7 @@ function Projects() {
               description={t.elDirectorio}
               setOpenDialog={setOpenDialog}
               setVideo={setVideo}
-              demoLink={process.env.PUBLIC_URL + "/elDirectorio.mp4"}
+              demoLink="https://drive.google.com/file/d/1ekCuPgykUJQkkfLzIHdg2mN7KZNWEAjX/view?usp=drive_link"
             />
           </Col>
 
@@ -52,7 +52,7 @@ function Projects() {
               description={t.haloTenant}
               setOpenDialog={setOpenDialog}
               setVideo={setVideo}
-              demoLink={process.env.PUBLIC_URL + "/haloTenant.mp4"}
+              demoLink="https://drive.google.com/file/d/1rogF0zepMnR6gZah97ikp_x-2NSM6ERt/view?usp=drive_link"
             />
           </Col>
 
@@ -64,7 +64,7 @@ function Projects() {
               description={t.dashboardDemo}
               setOpenDialog={setOpenDialog}
               setVideo={setVideo}
-              demoLink={process.env.PUBLIC_URL + "/dashboard-test.mp4"}
+              demoLink="https://drive.google.com/file/d/1euogfHn2fDGpRwBOusl9IA5pXM01Pcw4/view?usp=drive_link"
             />
           </Col>
 
@@ -76,7 +76,7 @@ function Projects() {
               description={t.talentStar}
               setOpenDialog={setOpenDialog}
               setVideo={setVideo}
-              demoLink={process.env.PUBLIC_URL + "/talentStar.mp4"}
+              demoLink="https://drive.google.com/file/d/156bVh6TgEaxVjsAYHysceQlKLohBEQar/view?usp=drive_link"
             />
           </Col>
 
@@ -88,7 +88,7 @@ function Projects() {
               description={t.socialScrapAi}
               setOpenDialog={setOpenDialog}
               setVideo={setVideo}
-              demoLink={process.env.PUBLIC_URL + "/socialBee.mp4"}
+              demoLink="https://drive.google.com/file/d/1GFor7n3qqbHyUPMMPpteXtMITu-Eovlf/view?usp=drive_link"
             />
           </Col>
           <Col md={4} className="project-card">
