@@ -18,18 +18,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { LanguageViewProvider } from "context/Context";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [load, updateLoad] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      upadateLoad(false);
+      updateLoad(false);
     }, 1200);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Preloader load={load} />
       <LanguageViewProvider>
         <div className="App" id={load ? "no-scroll" : "scroll"}>
